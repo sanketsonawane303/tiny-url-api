@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sanketsonawane303/tiny-url-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "firebase-admin": "^9.7.0"
   }
 }
