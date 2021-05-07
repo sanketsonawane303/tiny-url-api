@@ -1,14 +1,14 @@
 collections -
   users
-    username
+    username (ID)
     password (hashed)
     name
 
   urls
-    code
+    code (ID)
     url
     count
     username
 
-  details
-    last_code
+  details - 'info' (ID)
+    last_code - default start = 'zzz'
