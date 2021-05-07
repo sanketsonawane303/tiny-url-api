@@ -9,6 +9,4 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Only exporting 'db' and not 'admin'
-// Since only Firestore is required in the application
-module.exports = db;
+module.exports = { db, admin };

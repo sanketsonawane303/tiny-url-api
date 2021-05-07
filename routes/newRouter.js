@@ -1,6 +1,6 @@
 const express = require('express');
 const Joi = require('joi');
-const db = require('../firebase/config');
+const { db } = require('../firebase/config');
 const nextCode = require('../functions/nextCode');
 
 const router = express.Router();
