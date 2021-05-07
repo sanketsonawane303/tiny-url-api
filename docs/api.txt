@@ -1,9 +1,6 @@
-/register
-/login
+/new - POST { url }
 
-/new - POST { url, username }
-
-/stats - GET { username }
+/stats - GET
 
 /{id} - GET
 

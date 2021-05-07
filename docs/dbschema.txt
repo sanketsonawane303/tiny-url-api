@@ -1,9 +1,4 @@
 collections -
-  users
-    username (ID)
-    password (hashed)
-    name
-
   urls
     code (ID)
     url
