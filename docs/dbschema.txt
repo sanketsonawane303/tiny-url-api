@@ -1,0 +1,14 @@
+collections -
+  users
+    username
+    password (hashed)
+    name
+
+  urls
+    code
+    url
+    count
+    username
+
+  details
+    last_code

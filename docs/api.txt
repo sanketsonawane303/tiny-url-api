@@ -1,0 +1,10 @@
+/register
+/login
+
+/new - POST { url, username }
+
+/stats - GET { username }
+
+/{id} - GET
+
+/ - GET angular build
