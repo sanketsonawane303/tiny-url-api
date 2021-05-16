@@ -1,0 +1,36 @@
+#github {
+  font-size: 30px;
+}
+
+.content {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.form {
+  width: 50%;
+  margin: auto;
+}
+
+.result {
+  width: 75%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+#shortUrl {
+  border: 1px solid #198754;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#shortUrl:hover {
+  background-color: #198754;
+  color: white;
+}
+
+#info {
+  color: grey;
+  transform: translateY(-15px);
+  font-size: 90%;
+}
