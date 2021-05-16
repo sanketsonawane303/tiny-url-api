@@ -3,6 +3,8 @@ const { db, admin } = require('../firebase/config');
 
 const router = express.Router();
 
+router.use('/', express.static('public'));
+
 router.get('/:id', async (req, res) => {
   const code = req.params.id;
 

@@ -9,13 +9,21 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Set last_code to some inital value while if not set.
+// Set last_code to some inital value if not set.
 const infoRef = db.collection('details').doc('info');
 infoRef
   .get()
-  .then(({ lastCode }) => {
-    if (!lastCode) infoRef.set({ lastCode: 'axbi' });
+  .then((data) => {
+    const code = 'axbi';
+
+    if (!data.exists) return infoRef.set({ lastCode: code });
+
+    const { lastCode } = data.data();
+    if (!lastCode) infoRef.set({ lastCode: code });
   })
-  .catch((err) => process.exit());
+  .catch((err) => {
+    console.log(err);
+    process.exit();
+  });
 
 module.exports = { db, admin };
