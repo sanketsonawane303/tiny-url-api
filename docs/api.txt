@@ -4,4 +4,4 @@
 
 /{id} - GET
 
-/ - GET angular build
+/ - GET static page
