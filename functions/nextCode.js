@@ -1,4 +1,4 @@
-const aplhabets = 'abcdefghijklmnopqrstuvwxyz';
+const aplhabets = '0123456789abcdefghijklmnopqrstuvwxyz';
 const radix = aplhabets.length;
 
 module.exports = function (lastCode) {
