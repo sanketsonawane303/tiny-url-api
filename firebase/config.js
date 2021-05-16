@@ -9,4 +9,13 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
+// Set last_code to some inital value while if not set.
+const infoRef = db.collection('details').doc('info');
+infoRef
+  .get()
+  .then(({ lastCode }) => {
+    if (!lastCode) infoRef.set({ lastCode: 'axbi' });
+  })
+  .catch((err) => process.exit());
+
 module.exports = { db, admin };
