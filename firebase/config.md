@@ -1,12 +1,6 @@
 # Firebase Config
 
 Go to `Project settings > Service accounts`.
-Generatea new key and add the json file in the `firebase` folder.
+Generate a new key. Take the contents of the JSON file and `stringify` it and then convert it to `Base64` encoded string.
 
-Then create a `key.json` file with the following code in the same folder.
-
-<pre>
-{
-  "firebase-service-account": "&lt;filename of generated key&gt;.json"
-}
-</pre>
+Then set an environment variable `FIREBASE_CREDS_BASE64` to the Base64 encoded string.
