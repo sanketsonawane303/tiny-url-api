@@ -1,7 +1,0 @@
-/new - POST { url }
-
-/stats - GET
-
-/{id} - GET
-
-/ - GET static page

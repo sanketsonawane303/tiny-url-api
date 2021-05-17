@@ -1,9 +1,0 @@
-collections -
-  urls
-    code (ID)
-    url
-    count
-    username
-
-  details - 'info' (ID)
-    last_code - default start = 'zzz'
