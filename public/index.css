@@ -29,8 +29,11 @@
   color: white;
 }
 
-#info {
+.info {
   color: grey;
-  transform: translateY(-15px);
   font-size: 90%;
+}
+
+.moveUp {
+  transform: translateY(-15px);
 }
