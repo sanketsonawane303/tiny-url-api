@@ -29,7 +29,9 @@ router.post('/', async (req, res) => {
 
 function validate(url) {
   const schema = Joi.object({
-    url: Joi.string().required(),
+    url: Joi.string()
+      .regex(/^https?:\/\//)
+      .required(),
   });
 
   return schema.validate(url);
